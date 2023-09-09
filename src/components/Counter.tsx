@@ -9,7 +9,7 @@ export const Counter = () => {
 
   return (
     <div className="p-5 border border-violet-700 border-opacity-100 rounded-lg">
-      <h3>This is Counter Component</h3>
+      <h3>Counter Component with React Context</h3>
       <div className="flex p-2 w-full justify-center">
         <button
           onClick={() => setCount(count + 1)}

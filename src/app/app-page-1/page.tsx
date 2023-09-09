@@ -4,7 +4,7 @@ import { PageTitle } from "@/components/PageTitle";
 export default function Page() {
   return (
     <>
-      <PageTitle title="Page 1" />
+      <PageTitle title="App Router 1" />
 
       <Counter />
     </>
