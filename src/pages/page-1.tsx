@@ -1,15 +1,18 @@
 import { Counter } from "@/components/Counter";
 import { PageTitle } from "@/components/PageTitle";
+import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 
 const Page: React.FC = () => {
+  const { t } = useTranslation("pages-router");
+
   return (
     <>
       <Head>
-        <title>Pages page</title>
+        <title>{`${t("page-1")} - Next.js 13`}</title>
       </Head>
 
-      <PageTitle title="Pages Router 1" />
+      <PageTitle title={`${t("page-1")}`} />
 
       <Counter />
     </>
