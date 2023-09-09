@@ -1,9 +1,15 @@
 import Link from "next/link";
+import { LangForm } from "../SetLanguageForm";
 
 export const Links = () => {
   return (
     <>
-      <Link href="/">Home</Link>
+      <Link
+        href="/"
+        className="mt-1 block px-3 py-2 rounded-md text-white font-semibold font-medium hover:bg-violet-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+      >
+        Home
+      </Link>
 
       <div className="m-5 inline-block h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"></div>
 
@@ -36,6 +42,8 @@ export const Links = () => {
       >
         Page router 2
       </Link>
+
+      <LangForm />
     </>
   );
 };
